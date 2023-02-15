@@ -107,11 +107,7 @@
       <div class="col-md-11">
         <input class="form-control" id="note-title" ng-model="c.data.title" ng-change="c.updateNote('title')" ng-model-options="{debounce: 1000}"/>
       </div>
-      <div class="col-md-1"> 
-        <button class="btn btn-danger pull-right" ng-click="c.confirmDelete()"> 
-          <span class="glyphicon glyphicon-trash"></span> 
-        </button> 
-      </div>
+      <delete-button-confirm></delete-button-confirm>
     </div>
   </div>
   <div class="panel-body">
